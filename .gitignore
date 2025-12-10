@@ -82,7 +82,7 @@ wp-content/debug.log
 # =========================
 # PLUGINS
 # =========================
-wp-content/plugins/
+wp-content/plugins/*
 !wp-content/plugins/heureux-mix-utils/
 !wp-content/plugins/heureux-mix-blocks/
 
