@@ -1,0 +1,15 @@
+{
+	"name": "heureux-mix-utils",
+	"version": "1.0.0",
+	"description": "Utilitaires pour le site de L'Heureux Mix",
+	"main": "build/index.js",
+	"scripts": {
+		"start": "wp-scripts start",
+		"build": "wp-scripts build"
+	},
+	"author": "valentin-grenier",
+	"license": "GPL-3.0-or-later",
+	"devDependencies": {
+		"@wordpress/scripts": "^30.5.1"
+	}
+}

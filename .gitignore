@@ -83,6 +83,7 @@ wp-content/debug.log
 # PLUGINS
 # =========================
 wp-content/plugins/
+!wp-content/plugins/heureux-mix-utils/
 
 # =========================
 # MU-PLUGINS

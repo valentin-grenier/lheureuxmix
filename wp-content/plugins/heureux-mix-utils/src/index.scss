@@ -1,0 +1,82 @@
+#heureux-mix-utils {
+	max-width: 650px;
+
+	h1 {
+		margin-bottom: 1rem;
+	}
+
+	.components-button {
+		margin: 0.5rem 0;
+	}
+
+	@media screen and (max-width: 700px) {
+		max-width: 90%;
+		margin: auto;
+	}
+}
+
+.hm-popup {
+	position: fixed;
+	bottom: 6rem;
+	right: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	max-width: 300px;
+	text-wrap: nowrap;
+	border-radius: var(--wp--custom--radius-sm);
+	background: var(--wp--preset--color--secondary-light);
+	box-shadow: var(--wp--preset--shadow--soft);
+	z-index: 999;
+
+	&__title,
+	&__hours {
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	&__hours {
+		color: var(--wp--preset--color--secondary);
+		margin-bottom: 0.75rem;
+	}
+
+	&__tel {
+		background: var(--wp--preset--color--secondary);
+		color: var(--wp--preset--color--secondary-light);
+		padding: 0.25rem 0.75rem;
+		border-radius: var(--wp--custom--radius-sm);
+		text-decoration: none;
+		font-size: 0.9rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		max-width: 85%;
+		width: 100%;
+		right: unset;
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 0.5rem 0.75rem;
+
+		&__title,
+		&__hours {
+			font-size: 0.9rem;
+		}
+
+		&__hours {
+			margin-bottom: 0;
+		}
+
+		&__tel {
+			padding: 0.15rem 0.5rem;
+			font-size: 0.85rem;
+		}
+	}
+}
