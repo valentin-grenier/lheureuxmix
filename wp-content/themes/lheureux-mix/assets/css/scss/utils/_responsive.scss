@@ -1,0 +1,105 @@
+@use '../variables/index' as *;
+@use '../mixins/index' as *;
+
+@media screen and (max-width: $breakpoint__xl) {
+	main .wp-block-post-content > .wp-block-group {
+		&:not(.is-style-page-header):not(.is-style-hero-xl) {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+	}
+
+	footer > .wp-block-group {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+@media screen and (max-width: $breakpoint__lg) {
+	.lg-flex-column-center {
+		@include flex-column-center;
+	}
+}
+
+@media screen and (max-width: $breakpoint__md) {
+	.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.wp-block-media-text {
+		&.is-stacked-on-mobile {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 1.5rem;
+		}
+
+		> .wp-block-media-text__content {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&__media {
+			width: 100%;
+		}
+	}
+
+	.wp-pattern-inline-title-text.is-layout-flex {
+		max-width: 70%;
+		margin: auto;
+		gap: 1rem;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+
+		h3 {
+			text-align: center;
+		}
+	}
+
+	footer.wp-block-template-part {
+		.wp-block-image {
+			display: flex;
+			justify-content: center;
+		}
+
+		p:not(.is-style-bold-secondary) {
+			text-align: center;
+		}
+
+		.hm-footer-menus {
+			flex-direction: row;
+			justify-content: space-between;
+
+			.wp-block-column {
+				flex: unset !important;
+			}
+		}
+	}
+
+	.hm-post-content {
+		flex-direction: column-reverse;
+	}
+}
+
+@media screen and (max-width: $breakpoint__sm) {
+	.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid {
+		grid-template-columns: 1fr;
+		max-width: 100%;
+	}
+
+	.wp-pattern-inline-title-text.is-layout-flex {
+		max-width: 100%;
+
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+
+		h3 {
+			text-align: center;
+			text-wrap: wrap;
+		}
+	}
+}

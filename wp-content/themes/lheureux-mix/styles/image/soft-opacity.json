@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/image"],
+	"title": "Faible opacité",
+	"slug": "soft-opacity",
+	"styles": {
+		"css": "opacity: 50%"
+	}
+}

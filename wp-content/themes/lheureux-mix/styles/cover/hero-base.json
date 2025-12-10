@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/cover"],
+	"title": "Hero base",
+	"slug": "hero-base",
+	"settings": {},
+	"styles": {
+		"border": {
+			"radius": "var:custom|radius-lg"
+		},
+		"spacing": {
+			"padding": {
+				"top": "6rem",
+				"bottom": "6rem"
+			}
+		},
+		"dimensions": {
+			"minHeight": "500px"
+		}
+	}
+}

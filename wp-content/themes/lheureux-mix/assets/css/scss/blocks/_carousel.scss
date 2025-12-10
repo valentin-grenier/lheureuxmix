@@ -1,0 +1,21 @@
+.wp-block-cb-carousel {
+	&.references-slider {
+		.slick-slide {
+			overflow: visible;
+		}
+
+		.slick-track {
+			display: flex;
+			align-items: center;
+			padding: 2.5rem 0;
+		}
+	}
+
+	.slick-prev,
+	.slick-next {
+		&:before {
+			color: var(--wp--preset--color--white);
+			font-size: 2rem;
+		}
+	}
+}

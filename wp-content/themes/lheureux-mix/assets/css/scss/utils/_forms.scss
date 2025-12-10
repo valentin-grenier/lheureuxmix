@@ -1,0 +1,110 @@
+@use '../mixins/index' as *;
+
+form.wpcf7-form {
+	mark {
+		background: none;
+		color: var(--wp--custom--color-red);
+	}
+
+	fieldset {
+		background: var(--wp--preset--color--white);
+		border: none;
+		padding: 2rem 2.5rem;
+		margin: 0;
+		box-shadow: var(--wp--preset--shadow--soft);
+		border-radius: var(--wp--custom--radius-lg);
+
+		&:not(:last-of-type) {
+			margin-bottom: 1.5rem;
+		}
+
+		// == Conditional display
+		// == If form type is "Animation de soirée", display fieldset#event-info
+		&#event-information {
+			padding: 0 2.5rem;
+			max-height: 0;
+			overflow: hidden;
+			transition: all 400ms ease;
+			opacity: 0;
+			visibility: hidden;
+			z-index: -1;
+
+			&.visible {
+				padding: 2rem 2.5rem;
+				max-height: 1000px;
+				opacity: 1;
+				visibility: visible;
+				z-index: 1;
+			}
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 1.5rem;
+		}
+
+		input:not([type='submit']):not([type='reset']):not([type='button']):not([type='checkbox']):not([type='radio']),
+		textarea,
+		select {
+			width: 100%;
+			border: none;
+			border-bottom: solid 1px var(--wp--preset--color--secondary);
+			padding: 0.5rem 0;
+
+			@include input-value-placeholder-styles;
+
+			&::placeholder {
+				@include input-value-placeholder-styles;
+			}
+		}
+
+		span.wpcf7-list-item {
+			margin-left: 0;
+		}
+
+		select {
+			option {
+				@include input-value-placeholder-styles;
+				padding-left: 1rem;
+			}
+		}
+	}
+
+	p.disclaimer {
+		font-size: var(--wp--preset--font-size--sm);
+		color: var(--wp--preset--color--text);
+		margin-bottom: 1.5rem;
+		line-height: 28px;
+	}
+
+	input[type='submit'] {
+		@include button-secondary;
+	}
+
+	// == Validation Messages
+	span.wpcf7-not-valid-tip {
+		color: var(--wp--custom--color-red);
+	}
+
+	.wpcf7-response-output {
+		border: none;
+	}
+
+	&.invalid {
+		.wpcf7-response-output {
+			background: var(--wp--custom--color-red-light);
+			color: var(--wp--custom--color-red);
+			padding: 0.75rem 1rem;
+			border-radius: 12px;
+		}
+	}
+
+	&.sent {
+		.wpcf7-response-output {
+			background: var(--wp--preset--color--secondary-light);
+			color: var(--wp--custom--color-secondary);
+			padding: 0.75rem 1rem;
+			border-radius: 12px;
+		}
+	}
+}

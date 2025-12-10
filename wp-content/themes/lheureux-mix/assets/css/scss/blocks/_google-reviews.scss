@@ -1,0 +1,25 @@
+.ti-widget.ti-goog {
+	.ti-review-item {
+		border-radius: 1rem !important;
+	}
+
+	.ti-name {
+		font-size: 1rem !important;
+		color: var(--wp--preset--color--text) !important;
+		font-weight: bold !important;
+	}
+
+	.ti-review-content {
+		margin: 1rem 0;
+	}
+
+	span.ti-read-more-active {
+		color: var(--wp--preset--color--secondary) !important;
+		opacity: 1 !important;
+		font-weight: bold !important;
+	}
+
+	.ti-reviews-container {
+		margin-bottom: 0 !important;
+	}
+}

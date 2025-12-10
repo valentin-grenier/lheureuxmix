@@ -1,0 +1,15 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/group"],
+	"title": "Container base",
+	"slug": "group-container-base",
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|xxxl",
+				"bottom": "var:preset|spacing|xxxl"
+			}
+		}
+	}
+}

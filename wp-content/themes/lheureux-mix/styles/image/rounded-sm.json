@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/image", "core/post-featured-image", "core/group", "core/comments"],
+	"title": "Arrondis petit",
+	"slug": "rounded-small",
+	"styles": {
+		"border": {
+			"radius": "var:custom|radius-sm"
+		}
+	}
+}

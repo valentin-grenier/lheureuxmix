@@ -1,0 +1,16 @@
+@use '../mixins/index' as *;
+
+header.wp-block-template-part {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+
+	@include header-navigation-styles;
+
+	@media screen and (max-width: 525px) {
+		.wp-block-site-logo {
+			width: 10rem;
+		}
+	}
+}

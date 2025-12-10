@@ -1,0 +1,12 @@
+{
+	"name": "heureux-mix/link-to-post",
+	"title": "Lien vers un article",
+	"description": "Affiche un lien sous forme de card pour rediriger un utilisateur vers un autre article",
+	"category": "widgets",
+	"keywords": ["post", "link", "article", "lien", "card"],
+	"icon": "admin-links",
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "template.php"
+	}
+}

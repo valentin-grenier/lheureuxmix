@@ -1,0 +1,21 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/group"],
+	"title": "Container petit",
+	"slug": "group-container-small",
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|lg",
+				"bottom": "var:preset|spacing|lg",
+				"left": "var:preset|spacing|lg",
+				"right": "var:preset|spacing|lg"
+			},
+			"margin": {
+				"top": "var:preset|spacing|lg",
+				"bottom": "var:preset|spacing|lg"
+			}
+		}
+	}
+}

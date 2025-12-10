@@ -1,0 +1,21 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/group"],
+	"title": "Card carrousel",
+	"slug": "card-carousel",
+	"styles": {
+		"border": {
+			"radius": "var:custom|radius-lg"
+		},
+		"color": { "background": "var:preset|color|white" },
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|md",
+				"bottom": "var:preset|spacing|md",
+				"left": "var:preset|spacing|md",
+				"right": "var:preset|spacing|md"
+			}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+@use '../variables/index' as *;
+
+@mixin header-navigation-styles {
+	nav.wp-block-navigation {
+		border-radius: 0.6rem;
+
+		button.wp-block-navigation__responsive-container-open {
+			padding: 0.5rem 0.75rem;
+			align-items: center;
+			gap: 1rem;
+			line-height: 2rem;
+
+			&:after {
+				content: url('/wp-content/themes/lheureux-mix/assets/img/burger-icon.svg');
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+	}
+}
+
+@mixin group-is-style-page-header {
+	.wp-block-cover.is-style-page-header {
+		margin: 0.5rem !important;
+	}
+}
+
+@mixin bold-style-primary {
+	strong {
+		color: var(--wp--preset--color--primary);
+	}
+}
+
+@mixin bold-style-secondary {
+	strong {
+		color: var(--wp--preset--color--secondary);
+	}
+}
+
+@mixin media-text-media-radius {
+	&__media {
+		border-radius: var(--wp--custom--radius-md);
+		overflow: hidden;
+	}
+}
+
+@mixin input-value-placeholder-styles {
+	font-family: var(--wp--preset--font--family--mulish);
+	font-size: var(--wp--preset--font-size--base);
+	color: var(--wp--preset--color--secondary);
+
+	&:focus {
+		outline: none;
+	}
+}
+
+@mixin button-secondary {
+	background-color: var(--wp--preset--color--secondary);
+	color: var(--wp--preset--color--background);
+	font-family: var(--wp--preset--font-family--mulish);
+	font-size: var(--wp--preset--font-size--sm);
+	font-style: normal;
+	font-weight: 800;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-right: var(--wp--preset--spacing--sm);
+	padding-left: var(--wp--preset--spacing--sm);
+	text-transform: uppercase;
+	line-height: normal;
+	border-radius: var(--wp--custom--radius-sm);
+	border-width: 0;
+	transition: all 400ms ease;
+
+	&:disabled {
+		opacity: 0.5;
+	}
+}
+
+@mixin flex-column-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	@media screen and (max-width: $breakpoint__lg) {
+		max-width: 70% !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (max-width: $breakpoint__md) {
+		max-width: 100% !important;
+	}
+}

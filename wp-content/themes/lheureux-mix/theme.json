@@ -1,0 +1,324 @@
+{
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": {
+			"contentSize": "750px",
+			"wideSize": "1384px"
+		},
+		"color": {
+			"defaultDuotone": false,
+			"customDuotone": false,
+			"defaultGradients": false,
+			"customGradient": false,
+			"defaultPalette": false,
+			"custom": false,
+			"palette": [
+				{
+					"color": "#253237",
+					"name": "Texte",
+					"slug": "text"
+				},
+				{
+					"color": "#CB997E",
+					"name": "Primaire",
+					"slug": "primary"
+				},
+				{
+					"color": "#F9F3F0",
+					"name": "Primaire léger",
+					"slug": "primary-light"
+				},
+				{
+					"color": "#344E41",
+					"name": "Secondaire",
+					"slug": "secondary"
+				},
+				{
+					"color": "#F3F7F5",
+					"name": "Secondaire léger",
+					"slug": "secondary-light"
+				},
+				{
+					"color": "#F4F7FA",
+					"name": "Couleur de fond",
+					"slug": "background"
+				},
+				{
+					"color": "#ECE7E5",
+					"name": "Couleur de fond contrastée",
+					"slug": "background-contrast"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "Blanc",
+					"slug": "white"
+				},
+				{
+					"color": "#1F1F1F50",
+					"name": "Overlay",
+					"slug": "overlay-base"
+				},
+				{
+					"color": "#1F1F1F75",
+					"name": "Overlay doux",
+					"slug": "overlay-soft"
+				}
+			]
+		},
+		"spacing": {
+			"units": ["%", "rem", "vh"],
+			"defaultSpacingSizes": false,
+			"customSpacingSize": false,
+			"spacingSizes": [
+				{
+					"size": "0.5rem",
+					"name": "Très petit",
+					"slug": "xs"
+				},
+				{
+					"size": "1rem",
+					"name": "Petit",
+					"slug": "sm"
+				},
+				{
+					"size": "1.5rem",
+					"name": "Moyen",
+					"slug": "md"
+				},
+				{
+					"size": "2rem",
+					"name": "Large",
+					"slug": "lg"
+				},
+				{
+					"size": "3rem",
+					"name": "Grand",
+					"slug": "xl"
+				},
+				{
+					"size": "4rem",
+					"name": "Très grand",
+					"slug": "xxl"
+				},
+				{
+					"size": "5rem",
+					"name": "Très très grand",
+					"slug": "xxxl"
+				}
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontSizes": [
+				{
+					"name": "Petit",
+					"size": "0.875rem",
+					"slug": "sm"
+				},
+				{
+					"name": "Base",
+					"size": "1rem",
+					"slug": "base"
+				},
+				{
+					"name": "Base plus",
+					"size": "1.125rem",
+					"slug": "base-plus"
+				},
+				{
+					"name": "Moyen",
+					"size": "1.5rem",
+					"slug": "md"
+				},
+				{
+					"name": "Grand",
+					"size": "2rem",
+					"slug": "lg"
+				},
+				{
+					"name": "Très grand",
+					"size": "4rem",
+					"slug": "xl"
+				}
+			],
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+					"name": "System Font",
+					"slug": "system-font"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Mulish",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": ["file:./assets/fonts/mulish/mulish-700-normal.woff2"]
+						},
+						{
+							"fontFamily": "Mulish",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": ["file:./assets/fonts/mulish/mulish-800-normal.woff2"]
+						},
+						{
+							"fontFamily": "Mulish",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/mulish/mulish-400-normal.woff2"]
+						}
+					],
+					"fontFamily": "Mulish, sans-serif",
+					"name": "Mulish",
+					"slug": "mulish"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"P22PooperBlackPro\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/p22pooperblackpro/p22pooperblackpro-400-normal.otf"]
+						}
+					],
+					"fontFamily": "\"P22PooperBlackPro\"",
+					"name": "P22PooperBlackPro",
+					"slug": "p-22-pooperblackpro"
+				}
+			]
+		},
+		"border": {
+			"width": true,
+			"style": true,
+			"color": true,
+			"radius": true
+		},
+		"shadow": {
+			"defaultPresets": false,
+			"presets": [
+				{
+					"name": "Base",
+					"slug": "base",
+					"shadow": "0 10px 50px #00000010"
+				},
+				{
+					"name": "Soft",
+					"slug": "soft",
+					"shadow": "0 10px 25px #00000010"
+				}
+			]
+		},
+		"custom": {
+			"radius-sm": "0.5rem",
+			"radius-md": "1rem",
+			"radius-lg": "1.5rem",
+			"radius-xl": "2.5rem",
+			"color-red": "#b60000",
+			"color-red-light": "#f8a9a950",
+			"color-green": "#46b450",
+			"color-green-light": "#46b44f77"
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--mulish)",
+					"lineHeight": "normal"
+				},
+				"spacing": {
+					"padding": {
+						"top": "0.75rem",
+						"bottom": "0.75rem"
+					}
+				},
+				"border": {
+					"radius": "var:custom|radius-sm"
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--mulish)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--p-22-pooperblackpro)",
+					"fontWeight": "400"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--mulish)",
+					"fontWeight": "bold"
+				},
+				"css": "text-wrap: pretty;"
+			},
+			"link": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--mulish)"
+				}
+			}
+		},
+		"blocks": {
+			"core/cover": {
+				"color": {
+					"background": "var:preset|color|overlay-base"
+				}
+			},
+			"core/button": {
+				"typography": {
+					"fontSize": "var:preset|font-size|sm"
+				}
+			},
+			"core/social-link": {
+				"color": {
+					"text": "var:preset|color|secondary"
+				},
+				"typography": {
+					"fontSize": "3rem"
+				}
+			},
+			"core/embed": {
+				"border": {
+					"radius": "var:custom|radius-md"
+				},
+				"css": "overflow: hidden;"
+			},
+			"core/list-item": {
+				"elements": {
+					"link": {
+						"color": { "text": "var:preset|color|secondary" },
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
+			}
+		},
+		"color": {
+			"text": "var:preset|color|text"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--mulish)",
+			"fontStyle": "normal",
+			"fontWeight": "400",
+			"lineHeight": "2rem"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	],
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json"
+}

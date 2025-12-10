@@ -1,0 +1,14 @@
+@use '../mixins/index' as *;
+
+h1.wp-block-heading,
+h2.wp-block-heading,
+h3.wp-block-heading,
+h4.wp-block-heading,
+h5.wp-block-heading,
+h6.wp-block-heading {
+	@include bold-style-primary;
+
+	&.is-style-bold-secondary {
+		@include bold-style-secondary;
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/group"],
+	"title": "Container arrondis",
+	"slug": "container-rounded",
+	"styles": {
+		"border": {
+			"radius": "var:custom|radius-md"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|xl",
+				"bottom": "var:preset|spacing|xl"
+			}
+		}
+	}
+}

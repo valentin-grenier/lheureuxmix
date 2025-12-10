@@ -1,0 +1,19 @@
+@use 'forms';
+@use 'responsive';
+@use 'loader';
+@use 'modal';
+@use 'scroll-to-top';
+
+html {
+	scroll-behavior: smooth;
+
+	&.has-modal-open {
+		overflow: visible !important;
+
+		// == Fixed: Removed overlay on "Cover" block when modal is open
+		.wp-block-cover .wp-block-cover__inner-container,
+		.has-modal-open .wp-block-cover-image .wp-block-cover__inner-container {
+			z-index: 999;
+		}
+	}
+}

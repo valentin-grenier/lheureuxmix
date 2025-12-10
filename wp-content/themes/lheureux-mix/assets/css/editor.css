@@ -1,0 +1,81 @@
+header.wp-block-template-part nav.wp-block-navigation {
+  border-radius: 0.6rem;
+}
+header.wp-block-template-part nav.wp-block-navigation button.wp-block-navigation__responsive-container-open {
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 1rem;
+  line-height: 2rem;
+}
+header.wp-block-template-part nav.wp-block-navigation button.wp-block-navigation__responsive-container-open:after {
+  content: url("/wp-content/themes/lheureux-mix/assets/img/burger-icon.svg");
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.wp-group.is-style-page-header .wp-block-cover.is-style-page-header {
+  margin: 0.5rem !important;
+}
+
+.wp-block-paragraph strong,
+.wp-block-heading strong {
+  color: var(--wp--preset--color--primary);
+}
+.wp-block-paragraph.is-style-bold-secondary strong,
+.wp-block-heading.is-style-bold-secondary strong {
+  color: var(--wp--preset--color--secondary);
+}
+
+.wp-block-media-text__media {
+  border-radius: var(--wp--custom--radius-md);
+  overflow: hidden;
+}
+
+.wp-block-navigation.is-style-vertical .wp-block-navigation__container {
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+.wp-block-navigation.is-style-vertical .wp-block-navigation-item__content {
+  font-weight: 400;
+}
+
+.hm-block-link-to-post {
+  display: flex;
+  background: var(--wp--preset--color--secondary-light);
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 2rem 0;
+  border-radius: var(--wp--custom--radius-md);
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--wp--preset--color--text);
+}
+.hm-block-link-to-post__image {
+  width: 400px;
+  border-radius: var(--wp--custom--radius-sm);
+  overflow: hidden;
+}
+.hm-block-link-to-post__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hm-block-link-to-post__content {
+  padding: 0.5rem 1rem;
+}
+.hm-block-link-to-post__title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.hm-block-link-to-post__excerpt {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.hm-block-link-to-post__read-more {
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=editor.css.map */

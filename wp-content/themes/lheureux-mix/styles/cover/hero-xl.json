@@ -1,0 +1,19 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/cover"],
+	"title": "Hero XL",
+	"slug": "hero-xl",
+	"settings": {},
+	"styles": {
+		"border": {
+			"radius": "var:custom|radius-lg"
+		},
+		"spacing": {
+			"padding": {
+				"top": "12rem",
+				"bottom": "6rem"
+			}
+		}
+	}
+}

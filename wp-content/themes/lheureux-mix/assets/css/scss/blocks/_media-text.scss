@@ -1,0 +1,5 @@
+@use '../mixins/index' as *;
+
+.wp-block-media-text {
+	@include media-text-media-radius;
+}

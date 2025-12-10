@@ -1,0 +1,21 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/group", "core/column"],
+	"title": "Card",
+	"slug": "group-card",
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var:preset|spacing|md",
+				"bottom": "var:preset|spacing|md",
+				"left": "var:preset|spacing|md",
+				"right": "var:preset|spacing|md"
+			}
+		},
+		"border": {
+			"radius": "var:custom|radius-md"
+		},
+		"shadow": "var:preset|shadow|soft"
+	}
+}

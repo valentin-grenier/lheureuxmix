@@ -1,0 +1,12 @@
+@use '../mixins/index' as *;
+@use '../variables/index' as *;
+
+@include group-is-style-page-header;
+
+.wp-block-group {
+	@media screen and (max-width: $breakpoint__md) {
+		&.is-style-radius-soft {
+			padding: 1.5rem !important;
+		}
+	}
+}

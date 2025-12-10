@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"blockTypes": ["core/navigation"],
+	"title": "Alignement vertical",
+	"slug": "vertical",
+	"styles": {
+		"spacing": {
+			"blockGap": "wp:preset|spacing|20"
+		},
+		"css": "flex-direction: column; align-items: start;"
+	}
+}
