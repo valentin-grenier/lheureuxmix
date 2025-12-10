@@ -5,7 +5,7 @@
 .svn
 .git
 /vendor
-**/node_modules
+**/node_modules/
 package-lock.json
 composer.lock
 *.env
@@ -84,6 +84,7 @@ wp-content/debug.log
 # =========================
 wp-content/plugins/
 !wp-content/plugins/heureux-mix-utils/
+!wp-content/plugins/heureux-mix-blocks/
 
 # =========================
 # MU-PLUGINS
