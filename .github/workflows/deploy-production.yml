@@ -40,12 +40,12 @@ jobs:
                   protocol: ${{ secrets.FTP_PROTOCOL }}
                   username: ${{ secrets.FTP_USER }}
                   password: ${{ secrets.FTP_PASSWORD }}
-                  local-dir: wp-content/themes/theme-fse/
-                  server-dir: ${{ secrets.FTP_SERVER_DIR }}/wp-content/themes/theme-fse/
+                  local-dir: wp-content/themes/lheureux-mix/
+                  server-dir: ${{ secrets.FTP_SERVER_DIR }}/wp-content/themes/lheureux-mix/
                   timeout: 60000
                   security: strict
 
-            - name: Deploy Plugins
+            - name: Deploy Plugin - Heureux Mix Utils
               uses: SamKirkland/FTP-Deploy-Action@v4.3.5
               with:
                   server: ${{ secrets.FTP_HOST }}
@@ -53,7 +53,20 @@ jobs:
                   protocol: ${{ secrets.FTP_PROTOCOL }}
                   username: ${{ secrets.FTP_USER }}
                   password: ${{ secrets.FTP_PASSWORD }}
-                  local-dir: wp-content/plugins/
-                  server-dir: ${{ secrets.FTP_SERVER_DIR }}/wp-content/plugins/
+                  local-dir: wp-content/plugins/heureux-mix-utils/
+                  server-dir: ${{ secrets.FTP_SERVER_DIR }}/wp-content/plugins/heureux-mix-utils/
+                  timeout: 60000
+                  security: strict
+
+            - name: Deploy Plugin - Heureux Mix Blocks
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+              with:
+                  server: ${{ secrets.FTP_HOST }}
+                  port: ${{ secrets.FTP_PORT }}
+                  protocol: ${{ secrets.FTP_PROTOCOL }}
+                  username: ${{ secrets.FTP_USER }}
+                  password: ${{ secrets.FTP_PASSWORD }}
+                  local-dir: wp-content/plugins/heureux-mix-blocks/
+                  server-dir: ${{ secrets.FTP_SERVER_DIR }}/wp-content/plugins/heureux-mix-blocks/
                   timeout: 60000
                   security: strict
